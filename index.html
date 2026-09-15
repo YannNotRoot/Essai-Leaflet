@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte locale - La Rochelle</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="conteneur">
+        <h1>Plan de La Rochelle</h1>
+
+        <div id="map"></div>
+
+        <div class="legende">
+            <strong>Repères :</strong>
+            <span class="puce puce-wc"></span> Toilettes publiques
+            <span class="puce puce-poi"></span> Points d'intérêt
+        </div>
+
+        <h2>Tableau des emplacements</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Catégorie</th>
+                    <th style="width: 50%;">Désignation</th>
+                    <th style="width: 30%;">Accès carte</th>
+                </tr>
+            </thead>
+            <tbody id="tableau-donnees">
+                <!-- script tableau -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
